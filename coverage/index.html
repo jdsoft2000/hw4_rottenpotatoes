@@ -21,21 +21,21 @@
       <img src="./assets/0.4.5/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-08-12T08:47:59-07:00">2012-08-12T08:47:59-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-08-12T21:48:48-07:00">2012-08-12T21:48:48-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     All Files
-    (<span class="red">30.36%</span>)
+    (<span class="red">62.5%</span>)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>5</b> files in total.
     <b>56</b> relevant lines. 
-    <span class="green"><b>17</b> lines covered</span> and
-    <span class="red"><b>39</b> lines missed </span>
+    <span class="green"><b>35</b> lines covered</span> and
+    <span class="red"><b>21</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -61,11 +61,11 @@
       
       <tr>
         <td><a href="#59d4f62e5e16f8f6549974325bed31168d8a6048" class="src_link" title="./app/controllers/movies_controller.rb">./app/controllers/movies_controller.rb</a></td>
-        <td class="red">20.0 %</td>
+        <td class="red">60.0 %</td>
         <td>73</td>
         <td>45</td>
-        <td>9</td>
-        <td>36</td>
+        <td>27</td>
+        <td>18</td>
       </tr>
       
       <tr>
@@ -103,14 +103,14 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     Controllers
-    (<span class="red">23.4%</span>)
+    (<span class="red">61.7%</span>)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>2</b> files in total.
     <b>47</b> relevant lines. 
-    <span class="green"><b>11</b> lines covered</span> and
-    <span class="red"><b>36</b> lines missed </span>
+    <span class="green"><b>29</b> lines covered</span> and
+    <span class="red"><b>18</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -136,11 +136,11 @@
       
       <tr>
         <td><a href="#59d4f62e5e16f8f6549974325bed31168d8a6048" class="src_link" title="./app/controllers/movies_controller.rb">./app/controllers/movies_controller.rb</a></td>
-        <td class="red">20.0 %</td>
+        <td class="red">60.0 %</td>
         <td>73</td>
         <td>45</td>
-        <td>9</td>
-        <td>36</td>
+        <td>27</td>
+        <td>18</td>
       </tr>
       
     </tbody>
@@ -366,7 +366,7 @@
     <tr>
       <td colspan="3">
         <h3>./app/controllers/movies_controller.rb</h3>
-        <h4><span class="red">20.0 %</span> covered</h4>
+        <h4><span class="red">60.0 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -872,7 +872,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>39</pre>
       </td>
@@ -880,12 +880,12 @@
         <pre>    @movie = Movie.create!(params[:movie])</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>40</pre>
       </td>
@@ -893,12 +893,12 @@
         <pre>    flash[:notice] = &quot;#{@movie.title} was successfully created.&quot;</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>41</pre>
       </td>
@@ -906,7 +906,7 @@
         <pre>    redirect_to movies_path</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
@@ -1002,7 +1002,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>49</pre>
       </td>
@@ -1010,12 +1010,12 @@
         <pre>    @movie = Movie.find params[:id]</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>50</pre>
       </td>
@@ -1023,12 +1023,12 @@
         <pre>    @movie.update_attributes!(params[:movie])</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>51</pre>
       </td>
@@ -1036,12 +1036,12 @@
         <pre>    flash[:notice] = &quot;#{@movie.title} was successfully updated.&quot;</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>52</pre>
       </td>
@@ -1049,7 +1049,7 @@
         <pre>    redirect_to movie_path(@movie)</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
@@ -1093,7 +1093,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>56</pre>
       </td>
@@ -1101,12 +1101,12 @@
         <pre>    @movie = Movie.find(params[:id])</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>57</pre>
       </td>
@@ -1114,12 +1114,12 @@
         <pre>    @movie.destroy</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>58</pre>
       </td>
@@ -1127,12 +1127,12 @@
         <pre>    flash[:notice] = &quot;Movie '#{@movie.title}' deleted.&quot;</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>59</pre>
       </td>
@@ -1140,7 +1140,7 @@
         <pre>    redirect_to movies_path</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
@@ -1184,7 +1184,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>63</pre>
       </td>
@@ -1192,12 +1192,12 @@
         <pre>    @id = params[:movie_id]</pre>
       </td>
       <td class="hits">
-        0
+        3
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>64</pre>
       </td>
@@ -1205,12 +1205,12 @@
         <pre>    @movie = Movie.find(@id)</pre>
       </td>
       <td class="hits">
-        0
+        3
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>65</pre>
       </td>
@@ -1218,12 +1218,12 @@
         <pre>    @director = @movie.director</pre>
       </td>
       <td class="hits">
-        0
+        3
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="3">
       <td class="line_number">
         <pre>66</pre>
       </td>
@@ -1231,12 +1231,12 @@
         <pre>    if not @director.blank?</pre>
       </td>
       <td class="hits">
-        0
+        3
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="2">
       <td class="line_number">
         <pre>67</pre>
       </td>
@@ -1244,7 +1244,7 @@
         <pre>       @movies = Movie.similar_directors(@director)</pre>
       </td>
       <td class="hits">
-        0
+        2
       </td>
     </tr>
   
@@ -1262,7 +1262,7 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>69</pre>
       </td>
@@ -1270,12 +1270,12 @@
         <pre>     flash[:notice] = &quot;'#{@movie.title}' has no director info&quot;</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>70</pre>
       </td>
@@ -1283,7 +1283,7 @@
         <pre>   redirect_to movies_path</pre>
       </td>
       <td class="hits">
-        0
+        1
       </td>
     </tr>
   
