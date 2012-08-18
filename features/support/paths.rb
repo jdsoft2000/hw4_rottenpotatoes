@@ -23,8 +23,8 @@ module NavigationHelpers
       movie_path(Movie.find_by_title($1).id)
 
     when /^the Similar Movies page for "([^"]+)"$/
-      @movie_id = Movie.find_by_title($1).id
-      movie_similar_path(@movie_id)
+      @movie = Movie.find_by_title($1)
+      "/movies/#{@movie.id}/similar"
 
     when /^the RottenPotatoes home page$/
       movies_path
